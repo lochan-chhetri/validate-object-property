@@ -3,6 +3,7 @@ A util to check if a path is a valid property of an object.
 
 ## Arguments
   object (Object): The object to validate
+  
   path (String): The property to validate
 
 ## Returns
