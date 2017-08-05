@@ -1,3 +1,13 @@
+function validateArgs (object, path) {
+    if (typeof object !== 'object' || object instanceof Array) {
+        throw new TypeError('First argument must be an object literal.');
+    }
+
+    if (typeof path !== 'string') {
+        throw new TypeError('Second argument must be a string.');
+    }
+}
+
 /**
    * Checks if a `path` is a valid property of an `object`
    *
@@ -8,6 +18,8 @@
 */
 
 var validate = function (object, path) {
+    validateArgs(object, path);
+
     path = path.split('.');
     var next = {};
 
