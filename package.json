@@ -1,6 +1,6 @@
 {
   "name": "validate-object-property",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A util to check if a path is a valid property of an object.",
   "main": "index.js",
   "scripts": {
